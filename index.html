@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="大学生个人主页 - 展示个人信息、技能、项目经历">
+    <title>张明 - 个人主页</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">王某</a>
+            <button class="nav-toggle" aria-label="切换导航菜单">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#about" class="nav-link">关于我</a></li>
+                <li><a href="#skills" class="nav-link">技能</a></li>
+                <li><a href="#experience" class="nav-link">经历</a></li>
+                <li><a href="#projects" class="nav-link">项目</a></li>
+                <li><a href="#contact" class="nav-link">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="avatar-container">
+                <img src="images/avatar.jpg" alt="个人头像" class="avatar" onerror="this.src='https://via.placeholder.com/200x200/4A90E2/ffffff?text=WM'">
+            </div>
+            <h1 class="hero-name">王某</h1>
+            <p class="hero-title">计算机科学与技术专业学生</p>
+            <div class="tags">
+                <span class="tag">前端开发爱好者</span>
+                <span class="tag">人工智能学习者</span>
+                <span class="tag">开源贡献者</span>
+                <span class="tag">技术博主</span>
+                <span class="tag">终身学习者</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">联系我</a>
+                <a href="#projects" class="btn btn-secondary">查看项目</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="about-content">
+                <div class="about-card school-info">
+                    <div class="school-header">
+                        <img src="images/school-logo.png" alt="学校校徽" class="school-logo" onerror="this.style.display='none'">
+                        <div class="school-details">
+                            <h3>北京大学</h3>
+                            <p class="school-subtitle">信息科学技术学院</p>
+                        </div>
+                    </div>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>计算机科学与技术</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>本科</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>2021年09月 - 2025年06月</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>北京市海淀区</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-card bio">
+                    <h3>个人简介</h3>
+                    <p>热爱编程与技术，专注于前端开发和人工智能领域的学习与实践。在校期间积极参与各类技术竞赛和开源项目，具备扎实的编程基础和良好的团队协作能力。善于学习新技术，乐于分享知识，致力于成为一名优秀的软件工程师。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">专业技能</h2>
+            
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        技术技能
+                    </h3>
+                    <div class="skill-bars">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Vue.js</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-users"></i>
+                        软技能
+                    </h3>
+                    <div class="soft-skills">
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <span>沟通能力</span>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <span>团队协作</span>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <span>问题解决</span>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="soft-skill-item">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <span>时间管理</span>
+                            <div class="star-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="core-skills">
+                <h3 class="subsection-title">核心技能</h3>
+                <div class="core-skills-grid">
+                    <div class="core-skill-card">
+                        <div class="core-skill-icon">
+                            <i class="fab fa-vuejs"></i>
+                        </div>
+                        <h4>Vue.js 前端开发</h4>
+                        <p>熟练使用Vue.js框架进行单页面应用开发，掌握Vuex状态管理和Vue Router路由管理。</p>
+                        <div class="core-skill-case">
+                            <strong>应用案例：</strong>独立完成校园二手交易平台前端开发，实现用户认证、商品发布、即时通讯等功能。
+                        </div>
+                    </div>
+                    <div class="core-skill-card">
+                        <div class="core-skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h4>Python 数据分析</h4>
+                        <p>掌握Python数据分析库（Pandas、NumPy、Matplotlib），能够进行数据清洗、分析和可视化。</p>
+                        <div class="core-skill-case">
+                            <strong>应用案例：</strong>完成校园餐厅消费数据分析项目，为食堂运营提供数据支持。
+                        </div>
+                    </div>
+                    <div class="core-skill-card">
+                        <div class="core-skill-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h4>机器学习基础</h4>
+                        <p>了解机器学习基本算法，能够使用Scikit-learn进行简单的模型训练和预测。</p>
+                        <div class="core-skill-case">
+                            <strong>应用案例：</strong>实现基于协同过滤的电影推荐系统，准确率达到85%。
+                        </div>
+                    </div>
+                    <div class="core-skill-card">
+                        <div class="core-skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h4>Git 版本控制</h4>
+                        <p>熟练使用Git进行代码版本管理，了解Git Flow工作流程，积极参与开源社区。</p>
+                        <div class="core-skill-case">
+                            <strong>应用案例：</strong>为多个开源项目提交PR，累计贡献代码1000+行。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section-title">校园经历</h2>
+            
+            <div class="experience-tabs">
+                <button class="tab-btn active" data-tab="practice">校园实践</button>
+                <button class="tab-btn" data-tab="awards">竞赛获奖</button>
+            </div>
+
+            <div class="tab-content active" id="practice">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>计算机协会</h4>
+                                <span class="timeline-date">2023年09月 - 至今</span>
+                            </div>
+                            <p class="timeline-role">技术部部长</p>
+                            <ul class="timeline-details">
+                                <li>负责组织技术分享会，累计举办20+场技术讲座</li>
+                                <li>带领团队完成校园导航小程序开发，服务师生5000+</li>
+                                <li>建立新人培养体系，帮助50+新生入门编程</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>学生会宣传部</h4>
+                                <span class="timeline-date">2022年09月 - 2023年06月</span>
+                            </div>
+                            <p class="timeline-role">干事</p>
+                            <ul class="timeline-details">
+                                <li>负责学院官方公众号运营，粉丝增长200%</li>
+                                <li>设计活动海报及宣传物料50+份</li>
+                                <li>协助举办迎新晚会、运动会等大型活动</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h4>开源社区</h4>
+                                <span class="timeline-date">2022年03月 - 至今</span>
+                            </div>
+                            <p class="timeline-role">活跃贡献者</p>
+                            <ul class="timeline-details">
+                                <li>参与多个开源项目维护，累计提交PR 30+</li>
+                                <li>翻译技术文档10+篇，帮助社区国际化</li>
+                                <li>在GitHub获得200+ stars</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="awards">
+                <div class="awards-grid">
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="award-content">
+                            <h4>全国大学生数学建模竞赛</h4>
+                            <p class="award-level">国家级一等奖</p>
+                            <p class="award-date">2023年11月</p>
+                        </div>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="award-content">
+                            <h4>蓝桥杯全国软件和信息技术专业人才大赛</h4>
+                            <p class="award-level">省级一等奖</p>
+                            <p class="award-date">2023年04月</p>
+                        </div>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="award-content">
+                            <h4>中国大学生计算机设计大赛</h4>
+                            <p class="award-level">国家级二等奖</p>
+                            <p class="award-date">2023年07月</p>
+                        </div>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="award-content">
+                            <h4>优秀学生奖学金</h4>
+                            <p class="award-level">校级一等奖</p>
+                            <p class="award-date">2022年10月</p>
+                        </div>
+                    </div>
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="award-content">
+                            <h4>互联网+大学生创新创业大赛</h4>
+                            <p class="award-level">校级金奖</p>
+                            <p class="award-date">2022年09月</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">项目成果</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="校园二手交易平台" onerror="this.src='https://via.placeholder.com/400x250/4A90E2/ffffff?text=项目截图'">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>校园二手交易平台</h3>
+                        <p>基于Vue.js + Node.js的全栈项目，实现校园内二手物品交易功能，支持商品发布、搜索、即时通讯、订单管理等功能。</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Socket.io</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="智能课程推荐系统" onerror="this.src='https://via.placeholder.com/400x250/67C23A/ffffff?text=项目截图'">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>智能课程推荐系统</h3>
+                        <p>基于协同过滤算法的课程推荐系统，分析学生选课数据，提供个性化课程推荐，提高选课效率。</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Scikit-learn</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="校园导航小程序" onerror="this.src='https://via.placeholder.com/400x250/E6A23C/ffffff?text=项目截图'">
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>校园导航小程序</h3>
+                        <p>微信小程序项目，提供校园地图导航、建筑信息查询、路线规划等功能，服务师生日常出行。</p>
+                        <div class="project-tech">
+                            <span>微信小程序</span>
+                            <span>腾讯地图API</span>
+                            <span>云开发</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hobbies" class="section hobbies">
+        <div class="container">
+            <h2 class="section-title">兴趣爱好</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h4>阅读</h4>
+                    <p>热爱技术书籍和科幻小说，年均阅读量30+</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h4>摄影</h4>
+                    <p>喜欢记录生活中的美好瞬间，擅长风景摄影</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h4>跑步</h4>
+                    <p>坚持晨跑，每周跑步20公里，保持健康生活</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h4>游戏开发</h4>
+                    <p>业余时间学习Unity游戏开发，制作小游戏</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h4>音乐</h4>
+                    <p>喜欢听各类音乐，正在学习吉他弹唱</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="section roadmap">
+        <div class="container">
+            <h2 class="section-title">发展路线</h2>
+            <div class="roadmap-timeline">
+                <div class="roadmap-item completed">
+                    <div class="roadmap-marker">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <span class="roadmap-period">2021 - 2022</span>
+                        <h4>大一学年 - 基础夯实</h4>
+                        <p>完成计算机基础课程学习，掌握C语言、数据结构等基础知识。加入计算机协会，开始接触前端开发。</p>
+                    </div>
+                </div>
+                <div class="roadmap-item completed">
+                    <div class="roadmap-marker">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <span class="roadmap-period">2022 - 2023</span>
+                        <h4>大二学年 - 技能提升</h4>
+                        <p>深入学习前端技术栈，参与多个项目开发。开始学习机器学习基础知识，参加各类技术竞赛。</p>
+                    </div>
+                </div>
+                <div class="roadmap-item current">
+                    <div class="roadmap-marker">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <span class="roadmap-period">2023 - 2024</span>
+                        <h4>大三学年 - 实践深化</h4>
+                        <p>担任技术部部长，带领团队完成项目。准备考研或就业，积累实习经验，深化专业技能。</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <span class="roadmap-period">2024 - 2025</span>
+                        <h4>大四学年 - 职业启航</h4>
+                        <p>完成毕业设计，进入知名互联网公司实习或继续深造。建立个人技术品牌，持续学习成长。</p>
+                    </div>
+                </div>
+                <div class="roadmap-item">
+                    <div class="roadmap-marker">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <div class="roadmap-content">
+                        <span class="roadmap-period">2025+</span>
+                        <h4>长期目标 - 技术专家</h4>
+                        <p>成为全栈工程师或AI工程师，在技术领域深耕，为开源社区贡献力量，实现个人价值。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>邮箱</h4>
+                            <a href="mailto:zhangming@example.com">zhangming@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/zhangming" target="_blank">github.com/zhangming</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/zhangming" target="_blank">linkedin.com/in/zhangming</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>个人博客</h4>
+                            <a href="https://blog.zhangming.com" target="_blank">blog.zhangming.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>给我留言</h3>
+                    <form id="messageForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="您的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="留言内容" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+                </div>
+                <p class="footer-text">&copy; 2024 张明. All rights reserved.</p>
+                <p class="footer-text">Made with <i class="fas fa-heart"></i> in Beijing</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
